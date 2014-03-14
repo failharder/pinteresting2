@@ -10,12 +10,7 @@
       </button>
       <%= link_to "Pinteresting", root_path, class: "navbar-brand" %>
     </div>
-    <script type="text/javascript">
-    mixpanel.track_links("#logo", "click on logo", {
-        "referrer": document.referrer
-    });
-		</script>
-
+    
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse" id="right-nav">
       <ul class="nav navbar-nav navbar-right">
@@ -29,11 +24,7 @@
           <li><%= link_to "Sign in", new_user_session_path %></li>
         <% end %>
       </ul>
-      <script type="text/javascript">
-				mixpanel.track_links("#right-nav", "click nav link", {
-        "referrer": document.referrer
-				});
-			</script>
+     
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container -->
 </nav>
